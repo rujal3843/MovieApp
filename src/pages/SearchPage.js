@@ -27,5 +27,4 @@ const SearchPage = () => {
     </div>
   )
 }
-xyx zxcvb dfsfsdffds
 export default SearchPage;

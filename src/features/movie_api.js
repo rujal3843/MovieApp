@@ -76,16 +76,7 @@ export const movieApi = createApi({
       })
     }),
     
-    getGenre: builder.query({
-      query: () => ({
-        url: '/genre/movie/list',
-        method:'GET',
-        params: {
-          api_key: apiKey
-        }
-      })
-    }),
-
+    
     getPopular: builder.query({
       query: () => ({
         url: '/person/popular',
@@ -94,17 +85,18 @@ export const movieApi = createApi({
         }
       })
     }),
-
+    
     getDetail: builder.query({
       query: (query) => ({
         url: `/person/${query}`,
         params: {
           api_key: apiKey
         }
-
+        
       })
     }),
-
+    
+  
 
 
   })
@@ -112,4 +104,4 @@ export const movieApi = createApi({
 });
 
 
-export const { useGetMovieByCategoryQuery, useGetSearchMovieQuery, useGetTrendingQuery, useGetMovieVideoQuery, useGetMovieByPageQuery,useGetLatestMovieQuery,useGetGenreQuery,useGetPopularQuery,useGetDetailQuery } = movieApi;
+export const { useGetMovieByCategoryQuery, useGetSearchMovieQuery, useGetTrendingQuery, useGetMovieVideoQuery, useGetMovieByPageQuery,useGetLatestMovieQuery,useGetPopularQuery,useGetDetailQuery } = movieApi;

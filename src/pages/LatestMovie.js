@@ -13,11 +13,11 @@ export const LatestMovie = () => {
   }
 
   return (
-    <div>
-      <h1>{data.title}</h1>
-      <p>{data.status}</p>
-      {/* <img src={`https://image.tmdb.org/t/p/w600_and_h900_bestv2${data.poster_path}`} /> */}
-      <p>{data.overview}</p>
+    <div className='bg-slate-800 text-white font-bold text-center text-[30px] '>
+     <h1 className=''>Name: {data.title}</h1>
+      <p className='my-5'>Status: {data.status}</p>
+      <p className='my-5'>Language: {data.original_language}</p>
+      <p className='my-5'>Overview:  {data.overview}</p>
     </div>
   );
 };

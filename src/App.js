@@ -21,7 +21,7 @@ const App = () => {
       <Routes>
        
           <Route index element={<Home />} />
-          <Route path='movie/:category' element={<MovieCategory />}></Route>
+          <Route path='movie/:category' element={<MovieCategory />} />
           <Route path='movie/detail/:id' element={<MovieDetails />} />
           <Route path='movie/:category/:page' element={<MoviePage />} />
           <Route path='movie/search/:searchText' element={<SearchPage />} />
